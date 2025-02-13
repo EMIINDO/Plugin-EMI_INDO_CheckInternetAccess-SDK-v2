@@ -1,0 +1,63 @@
+{
+  "internet-status": {
+    "conditions": [
+      {
+        "id": "online",
+        "scriptName": "Online",
+        "highlight": true,
+        "isTrigger": true
+      },
+      {
+        "id": "offline",
+        "scriptName": "Offline",
+        "highlight": false,
+        "isTrigger": true
+      },
+      {
+        "id": "error",
+        "scriptName": "Error",
+        "highlight": false,
+        "isTrigger": true
+      },
+      {
+        "id": "is-status",
+        "scriptName": "IsStatus",
+        "highlight": false,
+        "isTrigger": false,
+        "isInvertible": false,
+        "isCompatibleWithTriggers": false,
+        "params": [
+          {
+            "id": "isStatus",
+            "type": "combo",
+            "items": [
+              "true",
+              "false",
+              "error"
+            ],
+            "initialValue": "true"
+          }
+        ]
+      }
+    ],
+    "actions": [],
+    "expressions": [
+      {
+        "id": "internet-access",
+        "expressionName": "InternetAccess",
+        "returnType": "any"
+      }
+    ]
+  },
+  "error": {
+    "conditions": [],
+    "actions": [],
+    "expressions": [
+      {
+        "id": "error-message",
+        "expressionName": "ErrorMessage",
+        "returnType": "any"
+      }
+    ]
+  }
+}

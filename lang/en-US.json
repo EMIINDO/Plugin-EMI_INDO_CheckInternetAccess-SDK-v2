@@ -1,0 +1,62 @@
+{
+  "languageTag": "en-US",
+  "fileDescription": "Strings for CheckInternetAccess Plugin",
+  "text": {
+    "plugins": {
+      "emi_indo_checkinternetaccess": {
+        "name": "CheckInternetAccess",
+        "description": "Add addon descirption here",
+        "help-url": "https://github.com/EMI-INDO/c3addon-bug/issues",
+        "properties": {},
+        "aceCategories": {
+          "internet-status": "internet status",
+          "error": "error"
+        },
+        "conditions": {
+          "online": {
+            "list-name": "Online",
+            "display-text": "Online",
+            "description": "You have internet access! true"
+          },
+          "offline": {
+            "list-name": "Offline",
+            "display-text": "Offline",
+            "description": "You are offline or cannot reach the internet! false"
+          },
+          "error": {
+            "list-name": "Error",
+            "display-text": "Error",
+            "description": "An error occurred while checking internet access"
+          },
+          "is-status": {
+            "list-name": "Is Status",
+            "display-text": "Is Internet Status, [b]{0}[/b]",
+            "description": "Is Internet Status.",
+            "params": {
+              "isStatus": {
+                "name": "Status :",
+                "desc": "Online | Offline | Error",
+                "items": {
+                  "true": "Online",
+                  "false": "Offline",
+                  "error": "Error"
+                }
+              }
+            }
+          }
+        },
+        "actions": {},
+        "expressions": {
+          "internet-access": {
+            "translated-name": "Internet Access",
+            "description": "response Internet Access"
+          },
+          "error-message": {
+            "translated-name": "Error Message",
+            "description": "response Error Message"
+          }
+        }
+      }
+    }
+  }
+}
